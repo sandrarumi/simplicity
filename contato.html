@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco - Simplicity</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fale Conosco - Simplicity</title>
 
-    <!-- o favicon pode ser inserido aqui. eh importante  -->
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+<!-- Inserindo Favicon -->
+<link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/estilos.css">
+<!-- Inserindo tags meta -->
+<meta name="description" content="Entre em contato com nossos consultores.">
+<meta name="keywords" content="contato">
 
-    <!-- inserido tags meta -->
-    <meta name="description" content="Entre em contato com nossos consultores.">
-    <meta name="keywords" content="contato">
-
-
+<!-- CSS externo -->
+<link rel="stylesheet" href="css/estilos.css">
 
 </head>
 <body>
@@ -23,308 +22,315 @@
     <!-- cabeçalho/topo -->
     <header>
         <div class="limitador">
-        <h1><a href="index.html">Simplicity</a></h1>
+            <h1><a href="index.html">Simplicity</a></h1>
             
             <nav>
-                <h2><a href="" class="icone">Menu &equiv; </a>
+                <h2>
+                    <a href="" class="icone">
+                        Menu &equiv; 
+                    </a>
                 </h2>
                 <ul class="menu">
-                    <!--sempre usar o title para descrever o link para ficar mais acessivel -->
                     <li><a href="index.html" title="página inicial">Home</a></li>
                     <li><a href="produtos.html" title="conheça nossos produtos">Produtos</a></li>
                     <li><a href="servicos.html" title="da criação de site a loja virtual, conheça nossos serviços">Serviços</a></li>
-                    <li><a href="contato.html" title="fale com a equipe Simplicity">Contato</a></li>           
-                    
+                    <li><a href="contato.html" title="fale com a equipe Simplicity">Contato</a></li>
                 </ul>
-            </nav>
-    
+            </nav>        
         </div>
-    </header><!-- Fim header -->
+    </header> <!-- /fim header -->                           
 
-    <!-- conteúdo / o main só usa uma vez -->
+    <!-- conteúdo -->
     <main>
         <article class="limitador conteudo">
-        <h2>Contato</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorum, maxime et consequatur architecto perspiciatis impedit ullam. Facilis sapiente magni accusantium consectetur qui omnis, consequatur autem iusto sunt tenetur id!</p>
-    
-        <p>
-        Incidunt illum, voluptatem reprehenderit quibusdam minus temporibus rem fugiat odit earum ipsum ratione excepturi quasi fugit suscipit libero, recusandae repellat culpa. Aspernatur natus omnis ad aperiam magnam suscipit, praesentium quasi. </p>
-    
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorum, maxime et consequatur architecto perspiciatis impedit ullam. Facilis sapiente magni accusantium consectetur qui omnis, consequatur autem iusto sunt tenetur id!</p>
 
-     <!-- Iniciando o formulário -->
-     <form action="https://formspree.io/f/xeqvnrjq" method="post" id="my-form"><!-- esse post nao exibe os dados na url -->
-        <div><!-- cada campo foi feito numa div pra ficar um embaixo do outro, senão colocar fica um do lado do outro -->
-            <label for="nome">Nome:</label>
-            <input type="text" name= "nome" id="nome" required>
-        </div>
+            <p>Incidunt illum, voluptatem reprehenderit quibusdam minus temporibus rem fugiat odit earum ipsum ratione excepturi quasi fugit suscipit libero, recusandae repellat culpa. Aspernatur natus omnis ad aperiam magnam suscipit, praesentium quasi.</p>
 
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" required>
-        </div>
+            <!-- iniciando o formulário -->
+            <form action="https://formspree.io/f/xleazwqy" method="post" id="my-form">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
 
-        <div>
-            <label for="data">Data de nascimento:</label>
-            <input type="date" name="data" id="data">
-        </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-        <div>
-            <label for="telefone">Telefone:</label>
-            <input type="tel" name="telefone" id="telefone" placeholder="Digite apenas números, incluindo o DDD">
-        </div>
-       
-        <div>
-            <label for="documento">CPF ou CNPJ:</label>
-            <input type="tel" name="documento" id="documento">
-        </div>
+                <div>
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" name="data" id="data">
+                </div>
 
-        <div>
-            <label for="idade">Idade:</label>
-            <input type="number" name="idade" id="idade" min="18" max="120">
-        </div>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Digite apenas números, incluindo o DDD">
+                </div>
 
-        <div>
-           <p>Gênero:</p><!-- radio deixa apenas uma escolha -->
-           <input type="radio" name="genero" id="masculino" value="masculino">
-           <label for="masculino">Masculino</label>
+                <div>
+                    <label for="documento">CPF ou CNPJ:</label>
+                    <input type="tel" name="documento" id="documento">
+                </div>
 
-           <input type="radio" name="genero" id="feminino" value="feminino">
-           <label for="feminino">Feminino</label>
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="idade" id="idade" min="18" max="120">
+                </div>
 
-           <input type="radio" name="genero" id="outros" value="outros">
-           <label for="outros">Prefiro não dizer</label>
- 
-        </div>
-            <p>Interesses:</p>
-            <input type="checkbox" name="interesse" id="desing" value="desing">
-            <label for="desing">Desing</label>
+                <div>
+                    <p>Gênero:</p>
 
-            <input type="checkbox" name="interesse" id="marketing" value="desing">
-            <label for="marketing">Marketing</label>
+                    <input type="radio" name="genero" id="masculino" value="masculino">
+                    <label for="masculino">Masculino</label>
 
-            <input type="checkbox" name="interesse" id="programacao" value="programacao">
-            <label for="programacao">Programação</label>
-            
-        <div>
-            <label for="cep">CEP</label>
-            <input type="text" id="cep" name="cep" maxlength="9" required>
-            <b id="status"></b>
-            
-        </div>
+                    <input type="radio" name="genero" id="feminino" value="feminino">
+                    <label for="feminino">Feminino</label>
 
-        <div>
-            <label for="endereco">Endereço:</label>
-            <input type="text" name="endereco" id="endereco" size="30"><!-- esse size controla a largura da caixa mas pode ser controlado pelo css -->
-        </div>
+                    <input type="radio" name="genero" id="outros" value="outros">
+                    <label for="outros">Outros</label>
+                </div>
 
-        <div>
-            <label for="numero">Número:</label>
-            <input type="tel" name="numero" id="numero">
-        </div>
 
-        <div>
-            <label for="bairro">Bairro:</label>
-            <input type="text" name="bairro" id="bairro">
-        </div>
+                <div>
+                    <p>Interesses:</p>
+                    <input type="checkbox" name="interesses" id="design" value="design">
+                    <label for="design">Design</label>
 
-        <div>
-            <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" id="cidade">
-        </div>
+                    <input type="checkbox" name="interesses" id="marketing" value="marketing">
+                    <label for="marketing">Marketing</label>
 
-        <div>
-            <label for="estado">Estado:</label>
-            <input type="text" name="estado" id="estado">
-        </div>
+                    <input type="checkbox" name="interesses" id="programacao" value="programacao">
+                    <label for="programacao">Programação</label>
+                </div>
 
-        <div>
-            <label for="assunto">Assunto:</label>
-            <select name="assunto" id="assunto">
-                <option></option>
-                <option>Dúvidas</option>
-                <option>Elogios</option>
-                <option>Reclamações</option>
-                <option>Outros</option>              
-            </select>
-        </div>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" required>
+                    <b id="status"></b>
+                </div>
 
-        <div>
-            <label for="mensagem">Mensagem:
-            <span id="maximo"> (restam <b id="caracteres">100</b> caracteres)</span>
-            </label><br>
-            <textarea name="mensagem" id="mensagem" cols="20" rows="5" maxlength="100"></textarea>
-        </div>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" size="30">
+                </div>
 
-        <button type="submit" id="my-form-button">Enviar dados</button>
-        
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro">
+                </div>
 
-     </form>
-    </article>      
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
+
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" name="estado" id="estado">
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto">
+                        <option></option>
+                        <option>Dúvidas</option>
+                        <option>Elogios</option>
+                        <option>Reclamações</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:
+                         <span id="maximo"> (restam <b id="caracteres">100</b> caracteres)</span>
+                    </label><br>
+                    <textarea name="mensagem" id="mensagem" cols="20" rows="5" maxlength="100"></textarea>
+                </div>
+
+                <button type="submit" id="my-form-button">Enviar dados</button>
+                <p id="my-form-status"></p>
+            </form>
+        </article>
+
+
+      
     </main>
+    <!-- /fim main -->
+
 
     <!-- rodapé/parte inferior -->
     <footer>
         <p>Simplicity é um site fictício desenvolvido por Chapolin Colorado - Senac Penha &copy; 2021</p>
-    </footer>
+    </footer> <!-- /fim footer -->
 
-    <!-- Exemplos adicionais 
-    <progress value="60" max="100"></progress>
-    <details>
-        <p>olha ai tudo bem</p>
-    </details>-->
+<script src="js/menu.js"></script>
 
-<script src="simplicity/menu.js"></script>
 
-<!-- linkando para o Vanilla Masker -->
-<script src="simplicity/vanilla-masker.min.js"></script>
+<!-- Linkando para o Vanilla Masker -->
+<script src="js/vanilla-masker.min.js"></script>
+    <!-- Mascarando campo de telefone -->
+    <script>
+        // VMasker(document.querySelector("#telefone")).maskPattern("(99) 9999-9999");
 
-<!-- mascarando campo de telefone -->
-<script>
-    /* VMasker (document.querySelector("#telefone"))
-    .maskPattern("(99) 9999-9999"); */
+        // VMasker(document.querySelector("#celular")).maskPattern("(99) 99999-9999");
 
-   /*VMasker (document.querySelector("#celular"))
-    .maskPattern("(99) 99999-9999"); */
+        // VMasker(document.querySelector("#cpf")).maskPattern("999.999.999-99");
 
-    /* VMasker (document.querySelector("#cpf")).maskPattern("999.999.999-99");*/
+        VMasker(document.querySelector("#cep")).maskPattern("99999-999");
 
-    VMasker (document.querySelector("#cep")).maskPattern("99999-999");
 
-    function inputHandler(masks, max, event) {
-        var c = event.target;
-        var v = c.value.replace(/\D/g, '');
-        var m = c.value.length > max ? 1 : 0;
-        VMasker(c).unMask();
-        VMasker(c).maskPattern(masks[m]);
-        c.value = VMasker.toPattern(v, masks[m]);
+
+        function inputHandler(masks, max, event) {
+            var c = event.target;
+            var v = c.value.replace(/\D/g, '');
+            var m = c.value.length > max ? 1 : 0;
+            VMasker(c).unMask();
+            VMasker(c).maskPattern(masks[m]);
+            c.value = VMasker.toPattern(v, masks[m]);
         }
 
-        var telMask = ['(99) 9999-99999', '(99) 99999-9999'];
-        var tel = document.querySelector('#telefone');
-        VMasker(tel).maskPattern(telMask[0]);
-        tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
+            var telMask = ['(99) 9999-99999', '(99) 99999-9999'];
+            var tel = document.querySelector('#telefone');
+            VMasker(tel).maskPattern(telMask[0]);
+            tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
 
-        var docMask = ['999.999.999-999', '99.999.999/9999-99'];
-        var doc = document.querySelector('#documento');
-        VMasker(doc).maskPattern(docMask[0]);
-        doc.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
-    
-</script>
+            var docMask = ['999.999.999-999', '99.999.999/9999-99'];
+            var doc = document.querySelector('#documento');
+            VMasker(doc).maskPattern(docMask[0]);
+            doc.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
+    </script>
 
-<!-- Usando como referencia o site Webservice Viacep, para preencher o formulário a partir do Cep -->
 
-<!-- Referenciando biblioteca Jquery 3.6
-Sempre que carregar um plugin que usa Jquery, a primeira a ser carregada é a biblicoteca jquery, do contrario o plugin não funciona-->
-<script src="plugins/jquery-3.6.0.min.js"></script>
 
-<script>
 
-    $(document).ready(function() {
 
-        function limpa_formulário_cep() {
-            // Limpa valores do formulário de cep.
-            $("#endereco").val("");
-            $("#bairro").val("");
-            $("#cidade").val("");
-            $("#estado").val("");
+
+    <!-- Utilizando o Webservice VIACEP - https://viacep.com.br - para preencher o formulário a partir do CEP -->
+
+    <!-- Referenciando biblioteca Jquery 3.6
+    IMPORTANTE: sempre que carregar um plugin que usa Jquery, a primeira a ser carregada é a biblioteca Jquery, do contrário o plugin não funcionará.    
+    -->
+    <script src="plugins/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            function limpa_formulário_cep() {
+                // Limpa valores do formulário de cep.
+                $("#endereco").val("");
+                $("#bairro").val("");
+                $("#cidade").val("");
+                $("#estado").val("");
+            }
             
-        }
-        
-        //Quando o campo cep perde o foco.
-        $("#cep").blur(function() {
+            //Quando o campo cep perde o foco.
+            $("#cep").blur(function() {
 
-            //Nova variável "cep" somente com dígitos.
-            var cep = $(this).val().replace(/\D/g, '');
+                //Nova variável "cep" somente com dígitos.
+                var cep = $(this).val().replace(/\D/g, '');
 
-            //Verifica se campo cep possui valor informado.
-            if (cep != "") {
+                //Verifica se campo cep possui valor informado.
+                if (cep != "") {
 
-                //Expressão regular para validar o CEP.
-                var validacep = /^[0-9]{8}$/;
+                    //Expressão regular para validar o CEP.
+                    var validacep = /^[0-9]{8}$/;
 
-                //Valida o formato do CEP.
-                if(validacep.test(cep)) {
+                    //Valida o formato do CEP.
+                    if(validacep.test(cep)) {
 
-                    //Preenche os campos com "..." enquanto consulta webservice.
-                    $("#endereco").val("...");
-                    $("#bairro").val("...");
-                    $("#cidade").val("...");
-                    $("#estado").val("...");
-                    $("#status").text("CEP encontrado").css(`color`, `black`);
+                        //Preenche os campos com "..." enquanto consulta webservice.
+                        $("#endereco").val("...");
+                        $("#bairro").val("...");
+                        $("#cidade").val("...");
+                        $("#estado").val("...");
+                        $("#status").text("CEP encontrado").css('color', 'black');
 
-                    //Consulta o webservice viacep.com.br/
-                    $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+                        
 
-                        if (!("erro" in dados)) {
-                            //Atualiza os campos com os valores da consulta.
-                            $("#endereco").val(dados.logradouro);
-                            $("#bairro").val(dados.bairro);
-                            $("#cidade").val(dados.localidade);
-                            $("#estado").val(dados.uf);
-                            
-                        } //end if.
-                        else {
-                            //CEP pesquisado não foi encontrado.
-                            limpa_formulário_cep();
-                            $("#status").text("CEP não encontrado.").css(`color`, `red`);
-                        }
-                    });
+                        //Consulta o webservice viacep.com.br/
+                        $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                            if (!("erro" in dados)) {
+                                //Atualiza os campos com os valores da consulta.
+                                $("#endereco").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#estado").val(dados.uf);
+                                $("#status").text(" ").css('color', 'black');
+                            } //end if.
+                            else {
+                                //CEP pesquisado não foi encontrado.
+                                limpa_formulário_cep();
+                                $("#status").text("CEP não encontrado.").css('color', 'red');
+                            }
+                        });
+                    } //end if.
+                    else {
+                        //cep é inválido.
+                        limpa_formulário_cep();
+                        $("#status").text("Formato de CEP inválido.").css('color', 'red');
+                    }
                 } //end if.
                 else {
-                    //cep é inválido.
+                    //cep sem valor, limpa formulário.
                     limpa_formulário_cep();
-                    $("#status").text("Formato de CEP inválido.").css (`color`, `red`);
                 }
-
-            } //end if.
-            else {
-                //cep sem valor, limpa formulário.
-                limpa_formulário_cep();
-            }
+            });
         });
-    });
 
-</script>
-
-<!-- Contador de caracteres do campo de mensagem do formulário -->
-<script>
-    //selecionando os elementos que serão utilizados
-    const spanMaximo = $("#maximo");
-    const bCaracteres = $("#caracteres");
-    const textMensagem = $("#mensagem");
-
-    //determinando a quantidade de caracteres
-    let quantidade = 100;
-
-    // Ouvinte de evento
-    textMensagem.on("input", function(){
-        
-        //capturando tudo o que for digitado
-        let conteudo = textMensagem.val();
-
-        // criando a contagem regressiva
-        let contagem = quantidade - conteudo.length;
-
-        //Exibindo o número no HTML
-        bCaracteres.text(contagem);
-
-        //pra mensagem ficar em vermelho qdo atingir 100 caracteres
-        if (contagem == 0) {
-            spanMaximo.css(`color`, `red`);
-            spanMaximo.text("Limite de caracteres alcançado")    
-        } else {
-            spanMaximo.css(`color`, `black`);
-            spanMaximo.html("restam <b id=`caracteres`>" +contagem+"</b> caracteres)");
-        }   
+    </script>
 
 
 
-    });
 
-</script>
+    <!-- Contador de caracteres do campo de mensagem do formulário -->
+    <script>
 
-<!-- Formspree - script para envio do formulário -->
-<script>
+        // selecionando os elementos que serão utilizados
+        const spanMaximo = $("#maximo");
+        const bCaracteres = $("#caracteres");
+        const textMensagem = $("#mensagem");
+
+        // determinando a quantidade de caracteres
+        let quantidade = 100;
+
+        // Ouvinte de evento
+        textMensagem.on("input", function(){
+
+            // capturando o que for digitado
+            let conteudo = textMensagem.val();
+            
+            // criando a contagem regressiva
+            let contagem = quantidade - conteudo.length;
+            // console.log(contagem);
+
+
+            // Exibindo o número no HTML
+            bCaracteres.text(contagem);
+
+
+
+            if (contagem == 0) {
+                spanMaximo.css('color', 'red');
+                spanMaximo.text("Limite de caracteres alcançado");
+            } else {
+                spanMaximo.css('color', 'black');
+                spanMaximo.html("(restam <b id='caracteres'>" +contagem+ "</b> caracteres)");
+            }
+
+        });
+
+
+    </script>
+
+
+
+
+    <!-- Formspree - script para envio do formulário -->
+    <script>
     var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
@@ -346,6 +352,10 @@ Sempre que carregar um plugin que usa Jquery, a primeira a ser carregada é a bi
     }
     form.addEventListener("submit", handleSubmit)
 </script>
+
+
+
+
 
 </body>
 </html>
