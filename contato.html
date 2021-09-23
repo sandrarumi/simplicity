@@ -49,7 +49,7 @@
     
         <p>
         Incidunt illum, voluptatem reprehenderit quibusdam minus temporibus rem fugiat odit earum ipsum ratione excepturi quasi fugit suscipit libero, recusandae repellat culpa. Aspernatur natus omnis ad aperiam magnam suscipit, praesentium quasi. </p>
-    </article>
+    
 
      <!-- Iniciando o formulário -->
      <form action="https://formspree.io/f/xeqvnrjq" method="post" id="my-form"><!-- esse post nao exibe os dados na url -->
@@ -159,7 +159,7 @@
         
 
      </form>
-           
+    </article>      
     </main>
 
     <!-- rodapé/parte inferior -->
@@ -316,12 +316,10 @@ Sempre que carregar um plugin que usa Jquery, a primeira a ser carregada é a bi
             spanMaximo.css(`color`, `black`);
             spanMaximo.html("restam <b id=`caracteres`>" +contagem+"</b> caracteres)");
         }   
-        
-        //
 
 
 
-    })
+    });
 
 </script>
 
@@ -343,7 +341,7 @@ Sempre que carregar um plugin que usa Jquery, a primeira a ser carregada é a bi
         status.innerHTML = "Mensagem enviada com sucesso, obrigado!";
         form.reset()
       }).catch(error => {
-        status.innerHTML = "Oops! Encontramos um problema. Revise as informações e envie novamente."
+        status.innerHTML = "Oops! Encontramos um problema, revise as informações e envie novamente."
       });
     }
     form.addEventListener("submit", handleSubmit)
