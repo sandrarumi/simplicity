@@ -1,14 +1,11 @@
 /* Regras de uso geral (sem Media Queries)*/
 
-*, *::after, *::before { box-sizing: border-box;}/* seletor astericos pega todos as tags da pagina, com after e before pega 100% - o que vem antes e depois do conteudo entre as tags- exemplo: <tag> after titulo before </tag>  */
+*, *::after, *::before { box-sizing: border-box; }/* seletor astericos pega todos as tags da pagina, com after e before pega 100% - o que vem antes e depois do conteudo entre as tags- exemplo: <tag> after titulo before </tag>  */
 
 /* Tornando as imagens responsivas */
 img { max-width: 100%;}
 html {font-size: 14px;}
 body, h1, h2, h3, p, figure {margin: 0; padding: 0;}
-iframe { 
-    width: 100%;
-    border: none;}
 
 body {
     background-color: white;
@@ -103,7 +100,7 @@ nav a:hover, nav a:focus {
 
 .destaque {
     background-image: url(../imagens/fundo-destaque.jpg);
-    height: 90vw;
+    height: 90vh;
     color: white;
     background-attachment: fixed;
     background-size: cover;
@@ -117,13 +114,13 @@ nav a:hover, nav a:focus {
 }
 
 .destaque h2 {
-    font-size: clamp (2rem, 7vw, 7rem);
+    font-size: clamp(2rem, 8vw, 7rem);
     animation-name: fadeIn;/* aplicando a animacao fadeIn */
     animation-duration: 1.5s;/* escolhendo a duracao do efeito */
 }
 
 .destaque p {
-    font-size: clamp (1.6rem, 3vw, 4rem);
+    font-size: clamp(1.6rem, 2vw, 4rem);
     font-weight: bold;
 
     animation: fadeIn 1.5s 1s backwards;
@@ -164,15 +161,20 @@ figure {
     text-shadow: black 1px 1px 2px;
 }
 
-iframe {
+iframe { 
+    width: 100%;
+    border: none;}
+ 
+
+/* iframe {
     width: white;
     border: none;
 
-} 
+}  */
 
-.historia iframe { max-width: 600px;}/* quer dizer que o video do youtube vai crescer ate a tela atingir 600px e depois para de aumentar */
+.historia iframe { max-width: 800px;}/* quer dizer que o video do youtube vai crescer ate a tela atingir 600px e depois para de aumentar */
 
-.front-end .localizacao {
+.front-end, .localizacao {
     text-align: center;
 }
 
@@ -247,7 +249,7 @@ form {
 
 /* seletor :not() 
 usado pra criar exceções. No ex abaixo, vamos formatar todos os inputs, exceto, radio e checkbox */
-input :not([type="radio"]):not([type="checkbox"]), select, textarea {
+input:not([type="radio"]):not([type="checkbox"]), select, textarea {
     width: 100%;
     height: 40px;
     border: none;
